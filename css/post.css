@@ -1,0 +1,17 @@
+.post-container{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+  border: 1px solid red;
+}
+
+.post-content{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+}
