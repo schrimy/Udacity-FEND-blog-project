@@ -1,13 +1,14 @@
+/* Initial css for small screens */
 .container{
   width: 100vw;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(4, 25%);
   grid-template-areas:
-    "hd"
-    "sd"
-    "main"
-    "ft";
+  "hd"
+  "sd"
+  "main"
+  "ft";
   border: 1px solid red;
 }
 
@@ -29,4 +30,10 @@
 
 .bottom{
   grid-area: ft;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
 }
