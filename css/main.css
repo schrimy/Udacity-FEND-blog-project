@@ -1,11 +1,13 @@
 @import "post.css";
+@import "card.css";
 
 /* Initial css for small screens */
 .container{
   width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: repeat(4, 25%);
+  grid-template-rows: repeat(4, auto);
   grid-template-areas:
   "hd"
   "sd"
@@ -28,6 +30,10 @@
 
 .content{
   grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .bottom{
