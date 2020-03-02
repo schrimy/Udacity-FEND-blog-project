@@ -1,16 +1,24 @@
 .card{
-  height: 100px;
-  width: 100px;
+  height: 400px;
+  width: 90%;
+  margin-bottom: 10px;
   border: 2px solid aqua;
 }
 
 .card-top{
-  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 45%;
   border: 1px solid green;
 }
 
 .card-bottom{
-  height: 60%;
-  border: 1px solid red;
-  background: #02ccba; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 55%;
+  background: #02ccba;
 }
