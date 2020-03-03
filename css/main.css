@@ -67,3 +67,30 @@ nav {
 nav > a:last-child {
   margin-top: auto;
 }
+
+/*media query for medium screens*/
+@media(min-width: 600px) and (max-width: 900px) {
+  .post-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .post-link-container > a {
+    padding-left: 10px;
+  }
+
+  .post-link-container > a:last-child,
+  nav > a:last-child {
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+}
+
+/* TODO: media query for desktop */
