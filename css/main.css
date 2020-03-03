@@ -72,7 +72,6 @@ nav > a:last-child {
 @media(min-width: 600px) and (max-width: 900px) {
   /*tablet sidebar/nav*/
   .post-link-container {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -87,7 +86,6 @@ nav > a:last-child {
   }
 
   nav {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-right: 10px;
@@ -95,11 +93,11 @@ nav > a:last-child {
 
   /*tablet main content*/
   .content {
-    grid-area: main;
     display: grid;
     grid-gap: 15px;
     padding: 0 10px 10px 10px;
     grid-template-columns: repeat(3, 1fr);
+    /* TODO: check both  values are needed*/
     grid-auto-rows: minmax(350px, 350px);
   }
 }
@@ -107,15 +105,15 @@ nav > a:last-child {
 /*media query for desktop */
 @media(min-width: 901px) {
   .container {
-    width: 100%;
-    height: auto;
-    display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 75px auto 50px;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd"
     "sd main main main main main main main"
     "ft ft ft ft ft ft ft ft";
-    border: 1px solid red;
+  }
+
+  .sidebar {
+    margin: 10px 0 10px 0;
   }
 }
