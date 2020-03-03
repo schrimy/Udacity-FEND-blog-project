@@ -47,3 +47,9 @@
 .author-bio {
   grid-area: 4/2/4/2;
 }
+
+.post-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
