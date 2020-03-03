@@ -1,7 +1,7 @@
 .card {
-  height: 400px;
-  width: 90%;
-  margin-bottom: 10px;
+  height: 350px;
+  width: 100%;
+  margin: 10px;
   border: 2px solid aqua;
 }
 
@@ -21,4 +21,14 @@
   justify-content: center;
   height: 55%;
   background: #02ccba;
+}
+
+/*Tablet/medium screens breakpoint*/
+@media(min-width: 600px) and (max-width: 900px) {
+  .card {
+    height: 350px;
+    width: 100%;
+    margin: 0;
+    border: 2px solid aqua;
+  }
 }
