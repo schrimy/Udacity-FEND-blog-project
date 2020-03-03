@@ -1,6 +1,7 @@
 /*Initial small screen layout*/
-.post-container{
-  width: 100vw;
+.post-container {
+  width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(3, 1fr);
@@ -11,7 +12,7 @@
   border: 1px solid red;
 }
 
-.post-content{
+.post-content {
   display: flex;
   flex-direction: column;
   border: 1px solid blue;

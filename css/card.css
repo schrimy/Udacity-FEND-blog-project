@@ -1,11 +1,11 @@
-.card{
+.card {
   height: 400px;
   width: 90%;
   margin-bottom: 10px;
   border: 2px solid aqua;
 }
 
-.card-top{
+.card-top {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@
   border: 1px solid green;
 }
 
-.card-bottom{
+.card-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;

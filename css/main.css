@@ -2,7 +2,7 @@
 @import "card.css";
 
 /* Initial css for small screens */
-.container{
+.container {
   width: 100%;
   height: auto;
   display: grid;
@@ -16,46 +16,46 @@
   border: 1px solid red;
 }
 
-.box{
+.box {
   border: 1px solid yellow;
 }
 
-.top{
+.top {
   grid-area: hd;
   display: flex;
   align-items: center;
   padding-left: 20px;
 }
 
-.sidebar{
+.sidebar {
   grid-area: sd;
+  margin-bottom: 10px;
 }
 
-.content{
+.content {
   grid-area: main;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 10px;
 }
 
-.bottom{
+.bottom {
   grid-area: ft;
   display: flex;
   align-items: center;
   padding-left: 10px;
 }
 
-.post-link-container{
+.post-link-container {
   display: flex;
   flex-direction: column;
 }
 
-.post-link-container > a:last-child{
+.post-link-container > a:last-child {
   margin: 0 0 10px 0;
 }
 
-nav{
+nav {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -64,6 +64,6 @@ nav{
 }
 
 /*sets the subscribe button to sit on the bottom of the nav*/
-nav > a:last-child{
+nav > a:last-child {
   margin-top: auto;
 }
