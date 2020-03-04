@@ -37,7 +37,7 @@
   }
 }
 
-/*Tablet/medium screens breakpoint*/
+/*XL screens breakpoint*/
 @media only screen and (min-width: 1200px) and (max-width: 1230px){
   .card {
     width: 240px;
