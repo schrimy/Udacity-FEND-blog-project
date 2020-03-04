@@ -1,6 +1,23 @@
 @import "links.css";
+@import "main.css";
 
 /*Initial small screen layout*/
+p {
+  font-weight: 400;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 0.8em;
+}
+
+figure > img {
+  width: 100%;
+}
+
 .post-container {
   width: 100%;
   height: auto;
@@ -11,7 +28,7 @@
     "hd"
     "main"
     "ft";
-  border: 1px solid red;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .post-content {
@@ -20,13 +37,18 @@
   flex-direction: column;
 }
 
+.post-article {
+  padding: 0 5% 10px 5%;
+}
+
 /*Author info section*/
 .author {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(4, auto);
   grid-gap: 5px;
-  border: 1px solid purple;
+  background-color: #fff;
+  padding: 0 0 5% 20px;
 }
 
 .avatar {
@@ -54,13 +76,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 10px;
+  padding: 10px 0 10px 0;
+  background-color: #fff;
+  font-weight: bold;
 }
 
 /*media query for small screens*/
 @media only screen and (min-width: 600px) {
+  .post-container {
+    grid-template-rows: 100px 1fr 75px;
+  }
+
   .post-article {
-    padding: 0 10% 0 10%;
+    padding: 0 10% 10px 10%;
   }
 
   .author {
@@ -76,7 +104,7 @@
 /*media query for large screens*/
 @media only screen and (min-width: 992px) {
   .post-article {
-    padding: 0 15% 0 15%;
+    padding: 0 15% 10px 15%;
   }
 
   .author {

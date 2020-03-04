@@ -1,11 +1,25 @@
 @import "card.css";
 @import "buttons.css";
 @import "links.css";
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&display=swap');
 
 body {
   font-family: "Ubuntu", sans-serif;
   margin: 0;
+}
+
+nav {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+/*  border: 2px solid blue;*/
+}
+
+/*sets the subscribe button to sit on the bottom of the nav*/
+nav > a:last-child {
+  margin-top: auto;
 }
 
 /* Initial css for small screens */
@@ -65,19 +79,6 @@ body {
 
 .post-link-container > a:last-child {
   margin: 10px 0 15px 0;
-}
-
-nav {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-/*  border: 2px solid blue;*/
-}
-
-/*sets the subscribe button to sit on the bottom of the nav*/
-nav > a:last-child {
-  margin-top: auto;
 }
 
 /*media query for small screens*/
