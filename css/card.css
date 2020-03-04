@@ -2,7 +2,7 @@
   height: 350px;
   width: 250px;
   margin: 10px;
-  border: 2px solid aqua;
+  border-radius: 5%;
 }
 
 .card-top {
@@ -11,7 +11,9 @@
   align-items: center;
   justify-content: center;
   height: 45%;
-  border: 1px solid green;
+  border: 1px solid #000;
+  border-bottom: none;
+  border-radius: 5% 5% 0 0;
 }
 
 .card-bottom {
@@ -20,10 +22,13 @@
   align-items: center;
   justify-content: center;
   height: 55%;
-  background: #02ccba;
+  background: #ffff88;
+  border: 1px solid #000;
+  border-top: none;
+  border-radius: 0 0 5% 5%;
 }
 
-/*Tablet/medium screens breakpoint*/
+/*small screens breakpoint*/
 @media only screen and (min-width: 600px) {
   .card {
     margin: 0;
@@ -31,14 +36,14 @@
 }
 
 /*medium screens breakpoint*/
-@media only screen and (min-width: 768px) and (max-width: 813px){
+@media only screen and (min-width: 768px) and (max-width: 813px) {
   .card {
     width: 235px;
   }
 }
 
 /*XL screens breakpoint*/
-@media only screen and (min-width: 1200px) and (max-width: 1230px){
+@media only screen and (min-width: 1200px) and (max-width: 1230px) {
   .card {
     width: 240px;
   }
