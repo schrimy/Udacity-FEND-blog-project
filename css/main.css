@@ -55,6 +55,7 @@ body {
   align-items: center;
   padding-left: 10px;
   background-color: #fff;
+  border: 1px solid black;
 }
 
 .post-link-container {
@@ -81,6 +82,10 @@ nav > a:last-child {
 
 /*media query for small screens*/
 @media only screen and (min-width: 600px) {
+
+  .container {
+    grid-template-rows: 100px repeat(2, auto) 75px;
+  }
   /*tablet sidebar/nav*/
   .post-link-container {
     flex-direction: row;
@@ -115,7 +120,7 @@ nav > a:last-child {
 @media only screen and (min-width: 768px) {
   .content {
     grid-template-columns: repeat(3, auto);
-    padding: 0;
+    padding: 0 0 10px 0;
   }
 
   /* TODO: add 10px bottom margin on to container */
@@ -125,7 +130,7 @@ nav > a:last-child {
 @media only screen and (min-width: 992px) {
   .container {
     grid-template-columns: 150px repeat(7, 1fr);
-    grid-template-rows: 75px auto 50px;
+    grid-template-rows: 100px auto 75px;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd"
     "sd main main main main main main main"
