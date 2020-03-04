@@ -1,9 +1,11 @@
 @import "card.css";
 @import "buttons.css";
+@import "links.css";
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap');
 
 body {
   font-family: "Ubuntu", sans-serif;
+  margin: 0;
 }
 
 /* Initial css for small screens */
@@ -18,23 +20,26 @@ body {
   "sd"
   "main"
   "ft";
-  border: 1px solid red;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-.box {
+/*.box {
   border: 1px solid yellow;
-}
+}*/
 
 .top {
   grid-area: hd;
   display: flex;
   align-items: center;
   padding-left: 20px;
+  background-color: #fff;
 }
 
 .sidebar {
   grid-area: sd;
   margin-bottom: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
 }
 
 .content {
@@ -49,6 +54,7 @@ body {
   display: flex;
   align-items: center;
   padding-left: 10px;
+  background-color: #fff;
 }
 
 .post-link-container {
@@ -57,7 +63,7 @@ body {
 }
 
 .post-link-container > a:last-child {
-  margin: 0 0 10px 0;
+  margin: 10px 0 15px 0;
 }
 
 nav {
@@ -65,7 +71,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid blue;
+/*  border: 2px solid blue;*/
 }
 
 /*sets the subscribe button to sit on the bottom of the nav*/
@@ -93,7 +99,7 @@ nav > a:last-child {
   nav {
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 10px;
+    padding: 0 20px 0 10px;
   }
 
   .content {
@@ -118,7 +124,7 @@ nav > a:last-child {
 /*media query for large screens */
 @media only screen and (min-width: 992px) {
   .container {
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: 150px repeat(7, 1fr);
     grid-template-rows: 75px auto 50px;
     grid-template-areas:
     "hd hd hd hd hd hd hd hd"
@@ -128,23 +134,22 @@ nav > a:last-child {
 
   .sidebar {
     margin: 0;
+    padding-top: 10px
   }
 
   .content {
     grid-template-columns: repeat(3, auto);
-  }
-
-  .bottom {
-    margin-top: 10px;
-  }
-
-  .top{
-    margin-bottom: 10px;
+    padding: 10px 0 10px 0;
   }
 
   .post-link-container,
   nav {
     flex-direction: column;
+  }
+
+  .post-link-container > a:first-child,
+  nav > a:last-child {
+    margin-bottom: 10px;
   }
 }
 
