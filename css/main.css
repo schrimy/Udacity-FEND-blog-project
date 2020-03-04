@@ -54,8 +54,8 @@ body {
   display: flex;
   align-items: center;
   padding-left: 10px;
-  background-color: #BEBEBE;
-  border-radius: 10px 10px 0 0;
+  background-color: #C8C8C8;
+  border-radius: 7px 7px 0 0;
 }
 
 .post-link-container {
