@@ -29,7 +29,7 @@ blockquote {
 
 .post-container {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 75px 1fr 50px;
@@ -44,6 +44,7 @@ blockquote {
   grid-area: main;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .post-article {
