@@ -32,9 +32,10 @@ blockquote {
   height: 100%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 75px 1fr 50px;
+  grid-template-rows: 75px auto 1fr 50px;
   grid-template-areas:
     "hd"
+    "auth"
     "main"
     "ft";
   background-color: rgba(0, 0, 0, 0.05);
@@ -53,6 +54,7 @@ blockquote {
 
 /*Author info section*/
 .author {
+  grid-area: auth;
   display: grid;
   grid-template-columns: auto 1fr;
   grid-template-rows: repeat(4, auto);
@@ -115,7 +117,7 @@ blockquote {
 /*media query for small screens*/
 @media only screen and (min-width: 600px) {
   .post-container {
-    grid-template-rows: 100px 1fr 75px;
+    grid-template-rows: 100px auto 1fr 75px;
   }
 
   .post-article {
