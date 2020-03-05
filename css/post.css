@@ -22,6 +22,11 @@ figure > img {
   width: 100%;
 }
 
+blockquote {
+  background: #fff;
+  padding: 5px;
+}
+
 .post-container {
   width: 100%;
   height: auto;
