@@ -67,7 +67,7 @@ nav > a:last-child {
   grid-area: ft;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 15px;
   background-color: #C8C8C8;
   border-radius: 7px 7px 0 0;
 }
