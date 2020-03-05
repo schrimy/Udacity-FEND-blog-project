@@ -129,11 +129,6 @@ blockquote {
   }
 }
 
-/*media query for medium screens*/
-@media only screen and (min-width: 768px) {
-
-}
-
 /*media query for large screens*/
 @media only screen and (min-width: 992px) {
   .post-article {
@@ -143,9 +138,4 @@ blockquote {
   .author {
     padding-left: 15%;
   }
-}
-
-/*media query for xl screens*/
-@media only screen and (min-width: 1200px) {
-
 }
