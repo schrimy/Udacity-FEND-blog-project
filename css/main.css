@@ -3,9 +3,15 @@
 @import "links.css";
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&display=swap');
 
+html {
+  height: 100%
+}
+
 body {
+  height: 100%;
   font-family: "Ubuntu", sans-serif;
   margin: 0;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 nav {
@@ -25,7 +31,7 @@ nav > a:last-child {
 /* Initial css for small screens */
 .container {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 75px repeat(2, auto) 50px;
@@ -34,7 +40,6 @@ nav > a:last-child {
   "sd"
   "main"
   "ft";
-  background-color: rgba(0, 0, 0, 0.05);
 }
 
 /*.box {
@@ -85,7 +90,7 @@ nav > a:last-child {
 @media only screen and (min-width: 600px) {
 
   .container {
-    grid-template-rows: 100px repeat(2, auto) 75px;
+    grid-template-rows: 100px auto 1fr 75px;
   }
   /*tablet sidebar/nav*/
   .post-link-container {
@@ -113,7 +118,7 @@ nav > a:last-child {
     grid-gap: 15px;
     padding: 0 10px 10px 10px;
     grid-template-columns: repeat(2, auto);
-    grid-auto-rows: minmax(350px);
+    grid-auto-rows: auto 1fr;
   }
 }
 
