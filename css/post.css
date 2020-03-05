@@ -48,7 +48,7 @@ figure > img {
   grid-template-rows: repeat(4, auto);
   grid-gap: 5px;
   background-color: #fff;
-  padding: 0 0 5% 20px;
+  padding: 0 0 15px 20px;
 }
 
 .avatar {
@@ -79,6 +79,13 @@ figure > img {
   padding: 10px 0 10px 0;
   background-color: #fff;
   font-weight: bold;
+}
+
+.fb > a > img,
+.twit > a > img,
+.linked-in > a > img {
+  height: 25px;
+  width: 25px;
 }
 
 /*media query for small screens*/
