@@ -2,6 +2,10 @@
 @import "main.css";
 
 /*Initial small screen layout*/
+h2 {
+  text-decoration: underline;
+}
+
 p {
   font-weight: 400;
 }
@@ -54,6 +58,13 @@ figure > img {
 .avatar {
   grid-area: 1/1/5/2;
   margin: 0 10px 0 5px;
+}
+
+.avatar > img {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: 1px solid #000;
 }
 
 .author-name {
