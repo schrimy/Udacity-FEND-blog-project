@@ -87,6 +87,12 @@ nav > a:last-child {
   margin: 10px 0 15px 0;
 }
 
+footer > p {
+  margin: 0;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
 /*media query for small screens*/
 @media only screen and (min-width: 600px) {
 
