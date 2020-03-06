@@ -72,7 +72,7 @@ nav > a:last-child {
   grid-area: ft;
   display: flex;
   align-items: center;
-  padding-left: 15px;
+  padding-left: 20px;
   background-image: linear-gradient(210deg, purple, aqua);
   /*background-color: #C8C8C8;*/
   border-radius: 7px 7px 0 0;
