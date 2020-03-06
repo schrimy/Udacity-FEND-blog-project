@@ -14,7 +14,7 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-nav {
+.main-nav {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -22,8 +22,8 @@ nav {
   font-weight: bold;
 }
 
-/*sets the subscribe button to sit on the bottom of the nav*/
-nav > a:last-child {
+/*sets the subscribe button to sit on the bottom of the .main-nav*/
+.main-nav > a:last-child {
   margin-top: auto;
 }
 
@@ -92,25 +92,25 @@ footer > p {
   .container {
     grid-template-rows: 100px auto 1fr 75px;
   }
-  /*tablet sidebar/nav*/
+  /*tablet sidebar/.main-nav*/
   .post-link-container {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .post-link-container > a {
-    padding-left: 10px;
+    margin-right: 15px;
   }
 
   .post-link-container > a:last-child,
-  nav > a:last-child {
+  .main-nav > a:last-child {
     margin: 0;
   }
 
-  nav {
+  .main-nav {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 20px 0 10px;
+    padding: 0 25px 0 20px;
   }
 
   .content {
@@ -153,13 +153,18 @@ footer > p {
   }
 
   .post-link-container,
-  nav {
+  .main-nav {
     flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
   }
 
-  .post-link-container > a:first-child,
-  nav > a:last-child {
-    margin-bottom: 10px;
+  .post-link-container > a {
+    margin: 0 0 15px 0;
+  }
+
+  .main-nav > a:last-child {
+    margin-top: 50px;
   }
 }
 

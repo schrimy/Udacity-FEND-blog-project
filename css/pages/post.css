@@ -49,9 +49,12 @@ blockquote {
 }
 
 .top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   grid-area: nav;
   background-color: #fff;
-  padding: 0 0 15px 20px;
+  padding: 0 20px 20px 20px;
 }
 
 .post-article {
@@ -130,6 +133,10 @@ blockquote {
     padding: 0 10% 10px 10%;
   }
 
+  .top-nav {
+    padding: 0 10% 20px 10%;
+  }
+
   .author {
     padding-left: 10%;
   }
@@ -139,6 +146,10 @@ blockquote {
 @media only screen and (min-width: 992px) {
   .post-article {
     padding: 0 15% 10px 15%;
+  }
+
+  .top-nav {
+    padding: 0 15% 20px 15%;
   }
 
   .author {
