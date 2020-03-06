@@ -1,1 +1,41 @@
 @import "main.css";
+
+.scribe-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75px 1fr 50px;
+  grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+}
+
+.scribe-content {
+  grid-area: main;
+  padding: 3% 30% 0 30%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 60%;
+}
+
+.scribe-form {
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.check-container > label{
+  font-size: 0.9em;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+input[type=checkbox] {
+  align-self: flex-start;
+}
+
+/* TODO: add media queries to change the padding size on the scribe-content */
