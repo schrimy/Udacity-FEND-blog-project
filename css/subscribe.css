@@ -14,10 +14,10 @@
 
 .scribe-content {
   grid-area: main;
-  padding: 3% 30% 0 30%;
+  padding: 3% 10% 0 10%;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 1fr 60%;
+  grid-template-rows: auto;
 }
 
 .scribe-form {
@@ -25,7 +25,16 @@
   width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+}
+
+.scribe-form > input,
+.check-container {
+  margin-top: 25px;
+}
+
+.scribe-form > button {
+  margin: 25px 0 35px 0;
 }
 
 .check-container > label{
@@ -39,3 +48,24 @@ input[type=checkbox] {
 }
 
 /* TODO: add media queries to change the padding size on the scribe-content */
+@media only screen and (min-width: 600px) {
+  .scribe-content {
+    padding: 3% 15% 0 15%;
+  }
+
+  .scribe-container {
+    grid-template-rows: 100px 1fr 75px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .scribe-content {
+    padding: 3% 22% 0 22%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .scribe-content {
+    padding: 3% 25% 0 25%;
+  }
+}
