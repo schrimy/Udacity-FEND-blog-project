@@ -104,7 +104,7 @@ blockquote {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-bottom: 20px;
+  padding: 20px 0 20px 0;
 }
 
 .post-social {
